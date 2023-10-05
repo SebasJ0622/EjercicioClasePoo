@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Collections;
-
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
@@ -28,14 +28,8 @@ public class Ejercicioclase {
     Arrays.sort(arreglo, Collections.reverseOrder());
     for (int s : arreglo) 
     System.out.println("Tus datos de mayor a menor son: " +s);
-    System.out.println("_________________________");
-        
-    
-
-
-                
-}
-            
+    System.out.println("_________________________");        
+}            
 }
 }
         
