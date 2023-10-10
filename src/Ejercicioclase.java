@@ -29,11 +29,18 @@ public class Ejercicioclase {
                 System.out.println("Tus datos de mayor a menor son: " + s);
             System.out.println("_________________________");
         }
-        long fact = 1;
-        for (int i = 0; i <= s; i--) {
-            fact = fact * i;
+        for (int i = 0; i < n; i++) {
+            arreglo[i] = calcularFactorial(arreglo[i]);
         }
-        System.out.println("Los factoriales son: " + fact);
+
+        System.out.println("Arreglo con factoriales: " + Arrays.toString(arreglo));
+    }
+
+    public static long calcularFactorial(long num) {
+        if (num == 0 || num == 1) {
+            return 1;
+        }
+        return num * calcularFactorial(num - 1);
 
     }
 }
